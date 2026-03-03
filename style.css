@@ -80,3 +80,6 @@ input:focus, textarea:focus {
 ::-webkit-scrollbar-thumb:hover {
     background: #2DCC70;
 }
+.shadow-viber\/10 {
+    box-shadow: 0 20px 25px -5px rgba(115, 96, 242, 0.1), 0 10px 10px -5px rgba(115, 96, 242, 0.04);
+}
