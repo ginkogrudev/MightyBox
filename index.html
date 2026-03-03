@@ -47,18 +47,17 @@
 
 <body class="bg-sand text-forest font-sans antialiased selection:bg-action selection:text-white">
 
-    <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center">
-        <div class="font-black text-2xl tracking-tighter uppercase italic">MIGHTY<span class="text-action">BOXES</span></div>
-        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
-            <a href="projects.html" class="hover:text-action transition">Проекти</a>
-            <a href="#reviews" class="hover:text-action transition">Отзиви</a>
-            <a href="#contact" class="hover:text-action transition">Контакт</a>
-        </div>
-        <button onclick="toggleCart()" class="bg-forest text-white px-5 py-2 rounded-full flex items-center gap-3 hover:bg-black transition">
-            <span class="text-xs font-bold uppercase">Вашият проект</span>
-            <span class="cart-count bg-action text-white text-[10px] rounded-full h-5 w-5 flex items-center justify-center">0</span>
-        </button>
-    </nav>
+   <nav class="fixed w-full z-[100] bg-white/90 backdrop-blur-md border-b border-forest/5 px-6 py-4 flex justify-between items-center">
+    <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
+        MIGHTY<span class="text-action">BOXES</span>
+    </div>
+    <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+        <a href="index.html" class="text-action font-bold underline decoration-2 underline-offset-8">Начало</a>
+        <a href="projects.html" class="hover:text-action transition text-gray-600">Проекти</a>
+        <a href="about_us.html" class="hover:text-action transition text-gray-600">За нас</a>
+    </div>
+    <a href="#contact" class="bg-forest text-white px-6 py-2 rounded-full text-xs font-bold uppercase hover:bg-action transition shadow-lg shadow-forest/10">Контакт</a>
+</nav>
 
     <section class="relative h-[95vh] flex items-center justify-center overflow-hidden bg-forest">
         <div class="absolute inset-0 opacity-50">
@@ -272,20 +271,50 @@
 
     <footer class="bg-white border-t border-gray-100 pt-20 pb-10">
     <div class="max-w-7xl mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
             
             <div class="space-y-6">
                 <div class="font-black text-2xl tracking-tighter uppercase italic text-forest">
                     MIGHTY<span class="text-action">BOXES</span>
                 </div>
-                <p class="text-gray-500 text-sm leading-relaxed max-w-xs italic">
-                    Ние превръщаме стандартните контейнери в премиум модулни домове. Иновативно строителство, устойчиви материали и скорост на изпълнение без аналог в България.
+                <p class="text-gray-500 text-sm leading-relaxed italic">
+                    Ние превръщаме стандартните контейнери в премиум модулни домове. Иновативно строителство в България.
                 </p>
                 <div class="flex space-x-4 text-forest/40">
                     <a href="#" class="hover:text-action transition text-xl"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="hover:text-action transition text-xl"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="hover:text-action transition text-xl"><i class="fab fa-viber"></i></a>
                 </div>
+            </div>
+
+            <div class="space-y-6">
+                <h4 class="font-black uppercase tracking-widest text-sm text-forest italic underline decoration-action decoration-2 underline-offset-8">Меню</h4>
+                <ul class="space-y-3">
+                    <li>
+                        <a href="index.html" class="text-gray-500 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                            Начало
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html" class="text-gray-500 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                            Проекти
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about_us.html" class="text-gray-500 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                            За нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact" class="text-gray-500 hover:text-action transition-all duration-300 text-sm italic flex items-center gap-2 group">
+                            <span class="w-0 group-hover:w-3 h-[1px] bg-action transition-all"></span>
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div class="space-y-6">
@@ -301,8 +330,8 @@
                     </li>
                     <li class="flex items-start gap-3 text-gray-500">
                         <i class="fas fa-map-marker-alt text-action mt-1"></i>
-                        <span class="text-sm font-medium leading-relaxed">
-                            ул. "Индустриална" 12,<br>гр. Сливен, България
+                        <span class="text-sm font-medium leading-relaxed italic text-xs">
+                            ул. "Индустриална" 12, Сливен
                         </span>
                     </li>
                 </ul>
@@ -310,22 +339,20 @@
 
             <div class="space-y-6">
                 <h4 class="font-black uppercase tracking-widest text-sm text-forest italic">Локация</h4>
-                <div class="rounded-2xl overflow-hidden h-48 shadow-lg grayscale hover:grayscale-0 transition duration-500 border border-gray-100">
+                <div class="rounded-2xl overflow-hidden h-32 shadow-lg grayscale hover:grayscale-0 transition duration-500 border border-gray-100">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46942.36531350618!2d26.294285434538965!3d42.68415538058253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a62994406253c3%3A0x400a01269bf5610!2z0KHQu9C40LLQtdC9!5e0!3m2!1sbg!2sbg!4v1700000000000!5m2!1sbg!2sbg" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.341427503798!2d26.319717!3d42.671077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a629e46a948e35%3A0x400a4834277a060!2zU2xpdmVu!5e0!3m2!1sen!2sbg!4v1700000000000" 
                         class="w-full h-full border-0" 
                         allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
+                        loading="lazy">
                     </iframe>
                 </div>
             </div>
-
         </div>
 
-        <div class="pt-8 border-t border-gray-100 flex flex-col md:row justify-between items-center gap-4">
+        <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center gap-4">
             <p class="text-gray-400 text-[10px] uppercase tracking-[0.2em]">
-                &copy; 2026 Mighty Boxes. All Rights Reserved.
+                © 2026 Mighty Boxes. All Rights Reserved.
             </p>
             <div class="text-gray-400 text-[10px] uppercase tracking-[0.2em] italic">
                 Designed by <span class="text-forest font-bold">GG Solutions</span>
